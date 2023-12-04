@@ -1,0 +1,41 @@
+<?php
+
+include_once("conexion.php");
+
+class CrudIngreso{
+
+public static function Ingreso(){
+
+$objeto =  new Conexion();
+$conectar = $objeto->Conectar();
+
+$cedula = $_POST["ced_alum"];
+$nombre = $_POST["nom_alum"];
+$apellido = $_POST["ape_alum"];
+$telefono = $_POST["tel_alum"];
+$id_Mat = $_POST["id_mat"];
+$curs_mat = $_POST["cur_mat"];
+$par_mat   = $_POST["par_mat"];
+
+$sqlAlumnos ="INSERT INTO alumnos (ced_alum,nom_alum,ape_alum,tel_alum) VALUES('$cedula','$nombre','$apellido','$telefono')";
+$resultado = $conectar->prepare($sqlAlumnos);
+
+if ($resultado->execute()==true) {
+    $foranea =$cedula;
+    $sqlMatriculas ="INSERT INTO matriculas (id_mat,cur_mat,par_mat,id_alum_per) VALUES('$id_Mat','$curs_mat','$par_mat','$foranea')";
+    $resultado2 =$conectar->prepare($sqlMatriculas);
+    if ($resultado2->execute()==true) {
+        $dato1 = $resultado->fetchAll(PDO::FETCH_ASSOC);
+        $dato2 = $resultado2->fetchAll(PDO::FETCH_ASSOC);
+        echo json_encode($dato1);
+        echo json_encode($dato2);
+        $conectar->commit();
+    }
+}
+
+
+}
+
+}
+
+?>
