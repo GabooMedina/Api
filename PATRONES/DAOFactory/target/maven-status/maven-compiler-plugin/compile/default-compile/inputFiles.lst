@@ -1,0 +1,9 @@
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\IDBAdapter.java
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\impl\MySQLDBAdapter.java
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\DBType.java
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\FactoryMain.java
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\impl\SQLiteDBAdapter.java
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\impl\PostgreDBAdapter.java
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\dao\ProductDAO.java
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\DBFactory.java
+C:\PATRONES\DAOFactory\src\main\java\edu\acaiza\Factory\entity\Product.java

@@ -1,0 +1,5 @@
+ec\acaiza\proxy\implement\IProcessProxy.class
+ec\acaiza\proxy\implement\DefaultProcessEjecutor.class
+ec\acaiza\proxy\implement\ProcessEjecutorProxy.class
+ec\acaiza\proxy\services\AuditService.class
+ec\acaiza\proxy\services\SecuirityService.class

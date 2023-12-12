@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<Users>
+    <User username='vichi' rol='Admin' password='1324'/>
+    <User username='lopez' rol='Admin' password='2345'/>
+    <User username='dayana' rol='Pe' password='3456'/>    
+</Users>
+
